@@ -1,0 +1,91 @@
+/* Initial styling for the hidden navigation bar on the right side */
+.navigation-bar-div {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Move the navigation bar off-screen initially to the right */
+    width: 250px;
+    height: 100%;
+    background-color: #333; /* Set your desired background color */
+    transition: right 0.3s ease;
+    padding-top: 20px; /* Add padding to the top */
+}
+
+/* Styling for the hamburger icon */
+.hamburger-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Adjust the right position */
+    font-size: 24px;
+    color: #333; /* Set the color of the hamburger icon */
+    cursor: pointer;
+}
+
+/* Change the right position of the navigation bar on hover and keep it visible while hovering over the navigation bar */
+.hamburger-icon:hover + .navigation-bar-div,
+.navigation-bar-div:hover {
+    right: 0;
+}
+
+/* Initial styling for the hidden sub-menu items */
+.primary-menu .sub-menu {
+    display: none;
+    padding-left: 10px; /* Add padding to the left of sub-menu items */
+}
+
+/* Show the sub-menu when hovering over the parent menu item */
+.primary-menu li:hover > .sub-menu {
+    display: block;
+    margin-top: 10px; /* Add margin to the top of sub-menu items */
+}
+
+/* Styling for the navigation items */
+.primary-menu li {
+    margin-bottom: 10px; /* Add margin to the bottom of navigation items */
+}
+
+/* Styling for the navigation links */
+.primary-menu a {
+    padding: 10px; /* Add padding to the navigation links */
+    display: block;
+    color: #fff; /* Set the color of the navigation links */
+    text-decoration: none;
+}
+
+
+/* Styling for the footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Set your desired background color */
+    color: #fff; /* Set the text color */
+    padding: 10px; /* Add padding to the footer */
+    display: flex; /* Use flexbox to create a horizontal layout */
+    justify-content: space-around; /* Add space around the items for better spacing */
+}
+
+/* Styling for each social share item */
+.social-share-list li {
+    list-style: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin */
+}
+
+/* Styling for social share links */
+.social-share-list a {
+    color: #fff; /* Set the color of the social share links */
+    text-decoration: none;
+    display: inline-block; /* Display items in a row */
+    margin: 0 10px; /* Add margin for spacing between items */
+}
+
+/* Styling for X */
+.social-share-list li:nth-child(2) {
+    display: inline-block; /* Hide X initially */
+}
+
+/* Styling for X when hovered */
+.social-share-list:hover li:nth-child(2) {
+    display: inline-block; /* Show X on hover */
+    color: #fff; /* Set the color of X */
+}
