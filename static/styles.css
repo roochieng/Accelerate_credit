@@ -89,3 +89,11 @@
     display: inline-block; /* Show X on hover */
     color: #fff; /* Set the color of X */
 }
+
+.apply-loan {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px; /* You can adjust the padding as needed */
+    background-color: #f0f0f0; /* Optional: background color */
+}
