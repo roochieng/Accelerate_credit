@@ -7,156 +7,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
     <title>Accelerate Credit</title>
+    <link rel="icon" href="../static/images/logo.png" type="image/png">
     <!-- External Stylesheets -->
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <script src="{{ url_for('static', filename='scripts/js.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/animate.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/color.js') }}"></script>
 
 </head>
 
 <body>
-    <div class="hamburger-icon">&#9776;</div>
-
-    <!-- Navigation Bar -->
-    <div class="navigation-bar-div">
-        <nav class="mainmenu-nav">
-            <ul id="menu-main-menu" class="primary-menu nav nav-pills">
-                <li class="menu-item home-item current-page-item"><a href="#" aria-current="page">Home</a></li>
-                <li class="menu-item has-children">
-                    <a href="#">Company</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item"><a href="#">About Us</a></li>
-                        <li class="menu-item"><a href="#">Our Partners</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item has-children">
-                    <a href="#">Our Products</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item"><a href="#">Salary Advance</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item"><a href="#">Contact us</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- Your content goes here -->
-    <h1>Welcome to Accelerate Credit</h1>
-
-    <!-- You can include Flask variables like this -->
-    <!-- {{ variable_name }} -->
-
-    <!-- Example navigation link -->
-    <div class="apply-loan">
-        <a href="#">Apply For Loan </a>
-    </div>
-
-    <div>
-        <span class="subtitle">YOUR LOW INTEREST LOANS IN KENYA</span>
-        <h1 class="title">
-            GET CASH HASSLE
-            <span>FREE</span><br>
-            <span class="header-caption">
-                <span class="cd-headline clip is-full-width">
-                    <span>LIKE: </span>
-                    <span class="cd-words-wrapper" style="width: 240.438px;" id="typed-output">
-                        <b class="is-hidden">SALARY ADVANCE</b>
-                        <b class="is-hidden">CASH LOANS</b>
-                    </span>
-                </span>
-            </span>
-        </h1>
-    </div>
-
-    <div>
-        <p class="description">
-            <span>At Accelerate Credit, we dedicate our interest to enhancing your financial stability and progress.
-                Our mission is to ACCELERATE the credit stability of our clients in all aspects of life.
-            </span>
-        </p>
-    </div>
-
-    <section class="Word-section">
-        <div class="elementor-container">
-            <div class="elementor-column">
-                <div class="elementor-widget">
-                    <div class="elementor-background-overlay"></div>
-                    <div class="elementor-element">
-                        <div class="elementor-widget-container">
-                            <div class="elementor-icon-box-wrapper">
-                                <div class="elementor-icon-box-icon">
-                                    <span class="elementor-icon elementor-animation-">
-                                        <i aria-hidden="true" class="fas fa-clock"></i>
-                                    </span>
-                                </div>
-                                <div class="elementor-icon-box-content">
-                                    <h3 class="elementor-icon-box-title">
-                                        <span>Quick &amp; Efficient</span>
-                                    </h3>
-                                    <p class="elementor-icon-box-description">We process all applications as soon as your employer approves</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div class="elementor-background-overlay"></div>
-                    <div class="elementor-element">
-                        <div class="elementor-widget-container">
-                            <div class="elementor-icon-box-wrapper">
-                                <div class="elementor-icon-box-icon">
-                                    <span class="elementor-icon elementor-animation-">
-                                        <i aria-hidden="true" class="fas fa-handshake"></i>
-                                    </span>
-                                </div>
-                                <div class="elementor-icon-box-content">
-                                    <h3 class="elementor-icon-box-title">
-                                        <span>Trust Worthy</span>
-                                    </h3>
-                                    <p class="elementor-icon-box-description">We have NO registration fees, ZERO hidden fees</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-column">
-                <div class="elementor-widget-wrap">
-                    <div class="elementor-element">
-                        <div class="elementor-widget-container">
-                            <div class="elementor-icon-box-wrapper">
-                                <div class="elementor-icon-box-icon">
-                                    <span class="elementor-icon elementor-animation-">
-                                        <i aria-hidden="true" class="fas fa-check-circle"></i>
-                                    </span>
-                                </div>
-                                <div class="elementor-icon-box-content">
-                                    <h3 class="elementor-icon-box-title">
-                                        <span>Hassle Free</span>
-                                    </h3>
-                                    <p class="elementor-icon-box-description">Don't Hassle! Apply for loans and Pay back within three months.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="top-bar">
+        <!-- Navigation Bar -->
+        <div class="navigation-bar-div">
+            <nav class="mainmenu-nav">
+                <ul id="menu-main-menu" class="primary-menu">
+                    <li class="main-menu-item"><a href="#" aria-current="page">Home</a></li>
+                    <li class="main-menu-item">
+                        <a href="#">Company</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">About Us</a></li>
+                            <li class="menu-item"><a href="#">Our Partners</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu-item">
+                        <a href="#">Our Products</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item"><a href="#">Salary Advance</a></li>
+                            <li class="menu-item"><a href="#">Cash Loan</a></li>
+                        </ul>
+                    </li>
+                    <li class="main-menu-item"><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
 
-    <section class="picture-section">
-        <!-- Add your content for this section -->
-    </section>
+        <button class="apply-loan">
+            <a target="_blank" href="#">Apply For Loan </a>
+        </button>
+        <!-- Your content goes here -->
+        <img class="image" src="../static/images/Updated_logo-cleaned.png" alt="Logo" width="200" height="100" />
+    </div>
+    
+    <div class="container">
+        <div class="first-left-div">
+            <div>
+                <!--<span class="subtitle">YOUR LOW INTEREST LOANS IN KENYA</span>-->
+                <h1 class="title">
+                    GET CASH HASSLE
+                    <span>FREE</span><br>
+                    <span class="header-caption">
+                        <span class="cd-headline clip is-full-width">
+                            <span class="blink">LIKE: </span>
+                            <span class="cd-words-wrapper" style="width: 240.438px;" id="typed-output">
+                                <b class="is-hidden">SALARY ADVANCE</b>
+                                <b class="is-hidden">CASH LOANS</b>
+                            </span>
+                        </span>                        
+                    </span>
+                </h1>
+            </div>
+        
+            <div>
+                <p class="description">
+                    <span>At Accelerate Credit, we dedicate our interest to enhancing your financial stability and progress.
+                        Our mission is to ACCELERATE the credit stability of our clients in all aspects of life.
+                    </span>
+                </p>
+            </div>
+        
+            <section class="Word-section">
 
+                <div class="elementor-icon-box-wrapper">
+                    <div class="elementor-icon-box-icon">
+                        <span class="elementor-icon elementor-animation-">
+                            <i aria-hidden="true" class="fas fa-clock"></i>
+                        </span>
+                    </div>
+                    <div class="elementor-icon-box-content">
+                        <h3 class="description">
+                            <span>Quick &amp; Efficient</span>
+                        </h3>
+                        <p class="description">We process all applications as soon as your employer approves</p>
+                    </div>
+                </div>
+                <div class="elementor-widget-container">
+                    <div class="elementor-icon-box-wrapper">
+                        <div class="elementor-icon-box-icon">
+                            <span class="elementor-icon elementor-animation-">
+                                <i aria-hidden="true" class="fas fa-handshake"></i>
+                            </span>
+                        </div>
+                        <div class="elementor-icon-box-content">
+                            <h3 class="description">
+                                <span>Trust Worthy</span>
+                            </h3>
+                            <p class="description">We have NO registration fees, ZERO hidden fees</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-icon-box-wrapper">
+                        <div class="elementor-icon-box-icon">
+                            <span class="elementor-icon elementor-animation-">
+                                <i aria-hidden="true" class="fas fa-check-circle"></i>
+                            </span>
+                        </div>
+                        <div class="elementor-icon-box-content">
+                            <h3 class="description">
+                                <span>Hassle Free</span>
+                            </h3>
+                            <p class="description">Don't Hassle! Apply for loans and Pay back within three months.</p>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        
+
+        <div class="first-right-div">
+            <section class="picture-section">
+                <div>
+                    <img class="image" src="../static/images/money_Project.gif" width="500" height="250" />
+                </div>
+                <div>
+                    <h3 class="description">
+                        Salary Advance
+                    </h3>
+                    <p class="description">
+                        As an Employee with a small salary we understand that this high cost of leaving
+                        can push you into some fix on paying your bills. Salary Advance help you clear
+                        those urgent debts and paying your bills headache-free.
+                    </p>
+                    <h3 class="description">
+                        Cash Loan
+                    </h3>
+                    <p class="description">
+                        You have that project still pending! You are planning to start that project!
+                        You need some capital to start your side hussle business!
+                        Applying for Cash Loan with us enables you to get a good amount to help you
+                        realise that project at an affordable rate.
+                    </p>
+
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="another-image">
+        <img class="image" src="../static/images/Updated_logo-cleaned.png" alt="Logo" />
+    </div>
     <div class="footer">
         <div class="social-share">
-            <span class="title">Find Us On Social Media</span>
+            <span class="sub-title">Find Us On Social Media</span>
             <ul class="social-share-list">
                 <li><a target="_blank" href="#" title="Facebook"><i class="Accelerate-facebook"></i> Facebook</a></li>
                 <li><a target="_blank" href="#" title="Twitter"><i class="Accelerate-twitter"></i> X</a></li>
                 <li><a target="_blank" href="#" title="Instagram"><i class="Accelerate-instagram"></i> Instagram</a></li>
             </ul>
+            <p>Copyright ©2023. All rights reserved by Accelerate Credit</p>
+        </div>
+        <div class="bodder-top">
+            <small class="text-muted">
+                Designed by Robley
+            </small>
         </div>
     </div>
     
